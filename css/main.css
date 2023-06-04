@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  min-height: 100vh;
+}
+.product__container {
+  max-width: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product__img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.product__img--mobile {
+  display: block;
+}
+.product__img--desktop {
+  display: none;
+}
+.product__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+}
+.product__category {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.product__name {
+  padding: 1em 0;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+.product__description {
+  line-height: 2.5rem;
+}
+.product__price-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 2em 0;
+}
+.product__price--now {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+.product__price--before {
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: line-through;
+}
+.product__btn {
+  width: 100%;
+  height: 3em;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+}
+.product__btn-icon {
+  padding: 0 1em;
+}
+
+@media (min-width: 996px) {
+  .product__container {
+    display: flex;
+    flex-direction: row;
+    max-height: 400px;
+    max-width: 600px;
+  }
+  .product__img {
+    width: 100%;
+    height: 100%;
+  }
+  .product__img--desktop {
+    display: block;
+  }
+  .product__img--mobile {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
